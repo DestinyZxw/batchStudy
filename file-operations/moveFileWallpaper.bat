@@ -30,7 +30,7 @@ for /f "delims=" %%a in ('dir /ad/b') do (
         @REM 我的cmd有设置默认编码,所以每次新建cmd时都会有这种顶部信息;
         @REM 但是不清楚为什么输入dir后，遍历后的第一个%a中也有存在;
         if exist %%a (
-            echo;target》 %WORK_PATH%\%%a   》》》》》》》》》》》》》》》》%Recycle%            
+            echo;target》 %WORK_PATH%\%%a   》》》》》》》》》》》》》》》》%Recycle%          
             move %WORK_PATH%\%%a %Recycle%
             if %errorlevel% NEQ 0 echo error》%errorlevel%
             if %errorlevel% EQU 0 echo %%a move complete 
@@ -40,5 +40,6 @@ for /f "delims=" %%a in ('dir /ad/b') do (
     )
 )
 
+echo 冗余文件已全部移至%Recycle%
 echo;%@% +%#%%#% %z%
 pause
