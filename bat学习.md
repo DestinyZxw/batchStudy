@@ -79,7 +79,7 @@ bat用于window平台，shell用于Linux平台,bat也可为.cmd后缀
 -d  
 仅搜索当前的目录，不包括其下的子目录，仅显示目录名称，不显示文件名称，不显示隐藏目录
 
--l
+-l  
 `FOR /L %%variable IN (start,step,end) DO command [command-parameters]`
 start 起始值，step 增值，end 结束值，类似与**JavaScript**中的**for**
 ```
