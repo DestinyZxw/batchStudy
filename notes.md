@@ -73,13 +73,13 @@ bat用于window平台，shell用于Linux平台,bat也可为.cmd后缀
 - 调用程序外部参数用%1 至%9，%0 %1 %2 %3 %4 %5 %6 %7 %8 %9 %*为命令行传递给批处理的参数。
 %0 批处理文件本身，包括完整的路径和扩展名，可调用自身
 
-4.2 `FOR`
+4.2 `FOR`  
 `FOR [-d | -l | -r | -f] %%variable IN (set) DO command [command-parameters]`
 
 -d  
 仅搜索当前的目录，不包括其下的子目录，仅显示目录名称，不显示文件名称，不显示隐藏目录
 
--l
+-l  
 `FOR /L %%variable IN (start,step,end) DO command [command-parameters]`
 start 起始值，step 增值，end 结束值，类似与**JavaScript**中的**for**
 ```
@@ -133,31 +133,31 @@ for /f "delims=" %%a in ('dir /ad/b') do ()
 
 
 ## 5, 常用命令
-`dir`
-`CD`  /d 切换盘符使用
-`move` 不允许跨盘符，否则抛出错误 **Access is denied**
-`copy` 仅拷贝文件夹里面的内容,可重命名相同文件
-`xcopy` 拷贝文件夹自身及里面的内容
+`dir`  
+`CD`  /d 切换盘符使用  
+`move` 不允许跨盘符，否则抛出错误 **Access is denied**  
+`copy` 仅拷贝文件夹里面的内容,可重命名相同文件  
+`xcopy` 拷贝文件夹自身及里面的内容  
 
-https://www.jb51.net/jiaoben/285025hom.htm
+https://www.jb51.net/jiaoben/285025hom.htm  
 
-https://www.jianshu.com/p/8ddf14bf03d5
+https://www.jianshu.com/p/8ddf14bf03d5  
 
 ## 6，补充
-当前盘符：%~d0
-当前路径：%cd%
-当前执行命令行：%0
-当前bat文件路径：%~dp0
-当前bat文件短路径：%~sdp0
+当前盘符：%~d0  
+当前路径：%cd%  
+当前执行命令行：%0  
+当前bat文件路径：%~dp0  
+当前bat文件短路径：%~sdp0  
 
 ## 7, 总结
 batch学习浅尝截止，毕竟是一个比较久远的脚本工具，其语法等在现在看来有很多不便的地方，在2023的今天可替代它操作File的有很多选择，比如node，gulp，paython等。
 有人建议使用Autohotkey，待学习
 
-## 78 参考
-bat入门优秀博客1 https://www.cnblogs.com/linyfeng/p/8072002.html
-bat入门优秀博客2 https://so.csdn.net/so/search?q=bat&t=blog&u=shihengzhen101
-学习bat的初衷1 https://steamcommunity.com/app/431960/discussions/1/3819659084189795256/
-学习bat的初衷2 https://www.bilibili.com/read/cv23519696
+## 8 参考  
+bat入门优秀博客1 https://www.cnblogs.com/linyfeng/p/8072002.html  
+bat入门优秀博客2 https://so.csdn.net/so/search?q=bat&t=blog&u=shihengzhen101  
+学习bat的初衷1 https://steamcommunity.com/app/431960/discussions/1/3819659084189795256/  
+学习bat的初衷2 https://www.bilibili.com/read/cv23519696  
 
 
