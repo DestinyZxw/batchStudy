@@ -47,6 +47,6 @@ for /d %%a in (*) do (
 )
 
 echo;
-echo 检查：移动操作流程已结束，请到 "%Recycle%" 查看
+echo 检查：移动操作流程已结束，请到 "%Recycle%" 查看。
 echo;%@% +%#%%#% %z%
 pause
